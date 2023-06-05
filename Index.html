@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="style.css">
+    <title>I WILL CASE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo2.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo">
+            <div class="navBar">
+                <div id="burger-button" onclick='cross()'>
+                    <div class='Burger-Menu bar1'></div>
+                    <div class='Burger-Menu bar2'></div>
+                    <div class='Burger-Menu bar3'></div>
+                </div>
+                <div id="myContent" class="myDropDownContent">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a class="current" href="#">HOME</a>
+                    <a href="#">COLLECTIONS</a>
+                    <a href="#">SHIPPING & DELIVERY</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">OUR BLOG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- navigation for web-->
+<div class="topnav">
+    <a href="#"><img src="logo.png" alt="logo"></a>
+    <div id="pages">
+        <a class="current" href="#">HOME</a>
+        <a href="#">COLLECTIONS</a>
+        <a href="#">SHIPPING & DELIVERY</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">OUR BLOG</a>
+    </div>
+ </div>
+
+    </header>
+    <script>
+        function cross(){
+            document.getElementById('myContent').style.height = '100%';
+            let x= document.getElementById('burger-button');
+            x.classList.toggle('change');
+            let drop = document.getElementById('myContent');
+            drop.classList.toggle('show');
+        }
+        function closeNav(){
+            document.getElementById('myContent').style.height = '0%';
+        }
+    
+        window.onclick = function(event) {
+            if (!event.target.matches('#burger-button')) {
+                let dropdowns = document.getElementsByClassName("myDropDownContent");
+                let i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById('burger-button').classList.toggle('change');
+                    }
+                }
+            }
+        }
+    </script>
+<img src="iwilltop.png" alt="topimg" class="topimg">
+<button class="button question">Will you?</button>
+</div>
+<h4>What is </h4> 
+<h5>I WILL CASE?</h4>
+<h6>A new thinking of phone case production</h6>
+<div class="container">
+<img src="leftpaper.png" class="leftfloat" alt="left">
+<h3 class="middletext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+<img src="rightpaper.png" class="rightfloat" alt="right">
+</div>
+
+
+
+    <button class="button read">READ MORE</button>
+<img src="biloggras.png" alt="biloggras" class="bil">
+</body>
+</html>
