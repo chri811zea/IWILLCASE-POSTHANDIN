@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="style.css">
+    <title>I WILL CASE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo2.png" />
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo">
+            <div class="navBar">
+                <div id="burger-button" onclick='cross()'>
+                    <div class='Burger-Menu bar1'></div>
+                    <div class='Burger-Menu bar2'></div>
+                    <div class='Burger-Menu bar3'></div>
+                </div>
+                <div id="myContent" class="myDropDownContent">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a class="current" href="#">HOME</a>
+                    <a href="collections.html">COLLECTIONS</a>
+                    <a href="shipping.html">SHIPPING & DELIVERY</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="blog.html">OUR BLOG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- navigation for web-->
+<div class="topnav">
+    <a href="#"><img src="logo.png" alt="logo"></a>
+    <div id="pages">
+        <a class="current" href="Index.html">HOME</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="shipping.html">SHIPPING & DELIVERY</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="blog.html">OUR BLOG</a>
+    </div>
+ </div>
+
+    </header>
+    <script>
+        function cross(){
+            document.getElementById('myContent').style.height = '100%';
+            let x= document.getElementById('burger-button');
+            x.classList.toggle('change');
+            let drop = document.getElementById('myContent');
+            drop.classList.toggle('show');
+        }
+        function closeNav(){
+            document.getElementById('myContent').style.height = '0%';
+        }
+    
+        window.onclick = function(event) {
+            if (!event.target.matches('#burger-button')) {
+                let dropdowns = document.getElementsByClassName("myDropDownContent");
+                let i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById('burger-button').classList.toggle('change');
+                    }
+                }
+            }
+        }
+    </script>
