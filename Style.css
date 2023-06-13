@@ -109,6 +109,15 @@ nav{
     text-align: center;
     
 }
+
+h1 {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 100px;
+}
+
 h4 {
     font-family: "Josefin Sans", sans-serif;
     padding-top: 5%;
@@ -123,11 +132,11 @@ h5 {
 h6 {
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     padding-left: 33%;
     padding-right: 33%;
     padding-bottom: 5%;
-    color: grey;
+    color: white;
 }
 h3 {
     font-size: larger;
@@ -150,6 +159,9 @@ h3 {
 .rightfloat{
     max-width: 20%;
 
+}
+.black {
+    background-color: black;
 }
 
 
