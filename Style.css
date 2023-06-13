@@ -132,17 +132,23 @@ h5 {
 h6 {
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
-    font-size: large;
-    padding-left: 33%;
-    padding-right: 33%;
+    font-size: x-large;
+    padding-left: 40%;
+    padding-right: 40%;
     padding-bottom: 5%;
     color: white;
 }
 h3 {
     font-size: larger;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    color: white;
+    font-family: "League Spartan";
+    font-weight: 300;
+}
+p {
 
 }
 .container{
@@ -162,6 +168,22 @@ h3 {
 }
 .black {
     background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.leftblack {
+    align-items: center;
+}
+.rightblack {
+align-items: center;
+}
+.emptyblack{
+    align-items: center;
+    opacity: 0%;
+}
+.green {
+    background-color: #607a24;
 }
 
 
