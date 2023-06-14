@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan">
+    <link rel="stylesheet" href="style.css">
+    <title>I WILL CASE</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo2.png" />
+</head>
+<body>
+    </div>
+    <header>
+        <nav>
+            <img src="logo.png" alt="logo">
+            <div class="navBar">
+                <div id="burger-button" onclick='cross()'>
+                    <div class='Burger-Menu bar1'></div>
+                    <div class='Burger-Menu bar2'></div>
+                    <div class='Burger-Menu bar3'></div>
+                </div>
+                <div id="myContent" class="myDropDownContent">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a class="current" href="#">HOME</a>
+                    <a href="collections.html">COLLECTIONS</a>
+                    <a href="shipping.html">SHIPPING & DELIVERY</a>
+                    <a href="about.html">ABOUT US</a>
+                    <a href="blog.html">OUR BLOG</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- navigation for web-->
+<div class="topnav">
+    <a href="#"><img src="logo.png" alt="logo"></a>
+    <div id="pages">
+        <a class="current" href="Index.html">HOME</a>
+        <a href="collections.html">COLLECTIONS</a>
+        <a href="shipping.html">SHIPPING & DELIVERY</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="blog.html">OUR BLOG</a>
+    </div>
+ </div>
+
+    </header>
+    <script>
+        function cross(){
+            document.getElementById('myContent').style.height = '100%';
+            let x= document.getElementById('burger-button');
+            x.classList.toggle('change');
+            let drop = document.getElementById('myContent');
+            drop.classList.toggle('show');
+        }
+        function closeNav(){
+            document.getElementById('myContent').style.height = '0%';
+        }
+    
+        window.onclick = function(event) {
+            if (!event.target.matches('#burger-button')) {
+                let dropdowns = document.getElementsByClassName("myDropDownContent");
+                let i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById('burger-button').classList.toggle('change');
+                    }
+                }
+            }
+        }
+    </script>
+    <body>
+        <section class="qa">
+        <img class="faqstyle" src="FAQ.png" alt="">
+
+        <section class="question">
+     <p1>
+        What is the difference between your case options?
+     </p1>
+    </section>
+  
+
+    <section class="answer">
+        <p2>We know that people like to protect their phones in different ways, so we offer two options. 
+            The first one, Snap, is primarily cosmetic. As the name suggests, it's a snap-on case that mainly serves to protect the back of your phone, but not to be too bulky in the process, and it is an extension of the shape of your phone. You bought that shape, so we won’t make a mockery out of its curves. We only raise the bezels around the camera a bit, so your camera is extra protected. But don’t worry, the front also has a lip that protects your screen, should you accidentally drop it face down. </p2> 
+            
+            <p2>The second option is a much tougher version, with more material being used to cover the phone. It sports a thicker lip on the front, with chamfered corners, so you can still reach everything on your screen. Additionally, a silver-based component is added to make the exterior antimicrobial, so you can sport this truly tough case anywhere and everywhere, and not worry about bacteria building up.  </p2>
+    </section>
+
+    <section class="question">
+<p1> 
+    Where is my order?
+</p1>
+    
+    </section>
+
+    <section class="answer">
+        <p2>
+            We know waiting can be hard, but if something doesn’t seem right, every order comes with a tracking number you can check yourself. Just check your purchase e-mail/receipt. If something still doesn’t seem quite right, don’t hesitate to contact our customer support. 
+        </p2>
+    </section>
+    
+    <section class="question">
+        <p1>
+            What are your cases made from?
+        </p1>
+           
+            </section>
+        
+        
+            <section class="answer">
+                <p2>
+                    Our cases are made from wheat straw, a by-product from harvesting wheat grain. This is beneficial, as unlike traditional plastics, used in most phone cases, wheat straw doesn’t require the usage of fossil fuels. Wheat straw is also incredibly durable, and is a renewable and sustainable way of producing long lasting phone cases for our customers. 
+        
+                </p2>
+            </section>
+
+            <section class="question">
+                <p1>
+                    Do you only make cases for iPhones?
+                </p1>
+                   
+                    </section>
+                
+                
+                    <section class="answer">
+                        <p2>
+                            The short answer is yes. The long answer is that with so many different options for Android phones, it’s difficult to produce something for every major brand's flagship product, and as they tend to change their shapes every iteration as well, setting up tooling through our production partners would be extremely cumbersome and expensive, especially as we produce in such limited quantities at a time. With the iPhone, we can often reuse molds, and several of their models have essentially interchangeable covers. We aren’t excluding that it could become an option in the future, but at the moment, iPhone only. 
+
+                
+                        </p2>
+                    </section>
+        
+                    <section class="question">
+                        <p1>
+                            I really liked a previous collection, will you make more?
+                        </p1>
+                           
+                            </section>
+                        
+                        
+                            <section class="answer">
+                                <p2>
+                                    We want our products to be unique and limited, and we believe old customers might not be too happy, if their unique product certainly entered production again. That being said, sequels are a thing, and if we see an idea that makes sense, you can be sure we will be trying it out. 
+
+                        
+                                </p2>
+                            </section>
+                            <section class="question">
+                                <p1>
+                                    I want to return an item.
+                                </p1>
+                                   
+                                    </section>
+                                
+                                
+                                    <section class="answer">
+                                        <p2>
+                                            We’re sad to hear, but happy to help. Of course, some restrictions apply, but if you’ll send us an e-mail at support@iwillcase.com, we’ll gladly help you out.
+                                
+                                        </p2>
+                                    </section>
+                                
+                                    <section class="question">
+                                        <p1>
+                                            What payment methods do you accept?
+                                        </p1>
+                                           
+                                            </section>
+                                        
+                                        
+                                            <section class="answer">
+                                                <p2>
+                                                    We accept all major debit and credit cards (American Express, VISA, Mastercard), as well as Apple Pay and Google Pay. 
+                                                    We don’t offer any buy now, pay later services at this time.
+                                                    
+                                        
+                                                </p2>
+                                            </section>     
+
+                                            <section class="question">
+                                                <p1>
+                                                    I want to collaborate with you!
+                                                </p1>
+                                                   
+                                                    </section>
+                                                
+                                                
+                                                    <section class="answer">
+                                                        <p2>
+                                                            Whether you’re an influencer or a company, we always want to check out people who have similar ideologies and missions as us, so send us some information and a proposal at collab@iwillcase.com 
+
+                                                
+                                                        </p2>
+                                                    </section>
+</section>
+    </body>
+    <footer><div class="footercontent">
+        <div class="footerbuttons">
+        <ul>
+        <li><img class="footerimg" src="logo.png" alt="logo"></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="pp.htmp">Privacy Policy</a></li>
+        <li><a href="TandC.html">Terms & conditions</a></li>
+    </ul>
+    </div>
+    </div></footer>
+    </html>

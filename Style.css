@@ -5,9 +5,6 @@
 h1 {
     font-family: "Josefin Sans", sans-serif;
 }
-h2 {
-    font-family: "Josefin Sans", sans-serif;
-}
 *{
     margin: 0;
     padding: 0;
@@ -117,13 +114,15 @@ h1 {
     text-align: center;
     font-size: 100px;
 }
-
-h4 {
-    font-family: "Josefin Sans", sans-serif;
+h2 {    font-family: "Josefin Sans", sans-serif;
     padding-top: 5%;
-    text-align: center;
-    font-size: 100px;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 90px;
+    margin-left: 5%;
+    color: white; 
 }
+
 h5 {
     font-family: "Josefin Sans", sans-serif;
     text-align: center;
@@ -148,7 +147,23 @@ h3 {
     font-family: "League Spartan";
     font-weight: 300;
 }
+h4 {
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 5%;
+    text-align: center;
+    font-size: 100px;
+    margin-left: 5%;
+
+}
 p {
+    font-size: larger;
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    color: white;
+    font-family: "League Spartan";
+    font-weight: 300;
 
 }
 .container{
@@ -184,8 +199,171 @@ align-items: center;
 }
 .green {
     background-color: #607a24;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.midgreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rightgreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{ 
+    font-family: "League Spartan";
+    font-weight: 200;
+    max-width: 90%;
+    color: white;
 }
 
+.bif{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: "Josefin Sans" ;
+    border-radius: 30px;
+
+    width: 25%;
+    font-size: large;
+    color: white;
+    background: #607a24;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.gande{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: "Josefin Sans" ;
+    border-radius: 30px;
+
+    width: 25%;
+    font-size: large;
+    color: white;
+    background: #607a24;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+.contact {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.socialicon {
+    max-width: ;
+font-size: 5px;
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items: center;
+}
+.socialicon img{
+    max-width: 5%
+}
+.skelet{
+    display: grid;
+    justify-content: right; 
+    width: 300px;
+
+    height: auto;
+    z-index: 0;
+}
+
+.faqstyle {
+ width: 100%;
+}
+.qa {
+   margin-right: 25%;
+   padding-left: 10%;
+    margin-left: 25%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}
+.question{
+    background-color: black;
+    border-radius: 25px;
+    vertical-align: middle;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+p1{
+    color: white;
+    padding: 10px;
+    padding-top: 30px ;
+
+}
+.answer{
+    margin-top: 10px;
+}
+
+
+footer{
+    background-color: black;
+    position: relative;
+    height: 75px;
+    display: in;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    justify-content: space-between;
+    clear: both;
+ 
+}
+.footercontent {
+    display: inline-block;
+    vertical-align: middle;
+}
+.footerimg{
+    height: 50px;
+    width: auto;
+    float: left;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 50px;
+ 
+}
+.footerbuttons{
+
+vertical-align: middle;
+
+}
+.footerbuttons ul{
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+   
+}
+.footerbuttons li{
+    display: inline;
+    margin: auto;
+    vertical-align: middle;
+    top: 50%;
+    line-height: 50px;
+}
+a{
+    font-family: "League Spartan";
+    font-weight: 200;
+    max-width: 90%;
+    color: white;
+  
+    vertical-align: middle;
+    justify-content: left;
+}
 
 .bil {
     max-width: 99%;
